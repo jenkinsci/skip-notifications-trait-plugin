@@ -37,16 +37,12 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
 
     /**
      * Constructor for stapler.
-     *
      */
     @DataBoundConstructor
     public SkipNotificationsTrait() {
         //empty
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void decorateContext(SCMSourceContext<?, ?> context) {
         if (context instanceof BitbucketSCMSourceContext) {
@@ -62,25 +58,16 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
     @Discovery
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public String getDisplayName() {
             return Messages.SkipNotificationsTrait_displayName();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public Class<? extends SCMSourceContext> getContextClass() {
             return BitbucketSCMSourceContext.class;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public Class<? extends SCMSource> getSourceClass() {
             return BitbucketSCMSource.class;
