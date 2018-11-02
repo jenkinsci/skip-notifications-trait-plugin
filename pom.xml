@@ -22,14 +22,13 @@
  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  ~ THE SOFTWARE.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.2</version>
-    <relativePath />
+    <version>3.25</version>
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
@@ -37,14 +36,28 @@
   <packaging>hpi</packaging>
 
   <name>Skip Notifications Trait plugin</name>
-  <url>https://wiki.jenkins.io/display/JENKINS/Skip+Notifications+Trait+Plugin</url>
   <description>This is an extension for Bitbucket Branch Source Plugin, which allows to skip notifying BitBucket instance about build statuses.</description>
+  <url>https://wiki.jenkins.io/display/JENKINS/Skip+Notifications+Trait+Plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
       <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <id>alex_dubrouski</id>
+      <name>Alex Dubrouski</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/skip-notifications-trait-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/skip-notifications-trait-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/skip-notifications-trait-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <jenkins.version>1.642.3</jenkins.version>
@@ -53,20 +66,6 @@
     <scm-api.version>2.2.0</scm-api.version>
     <git.version>3.6.0</git.version>
   </properties>
- 
- <developers>
-     <developer>
-       <id>alex_dubrouski</id>
-       <name>Alex Dubrouski</name>
-     </developer>
- </developers>
-
-  <scm>
-    <connection>scm:git:git://github.com/jenkinsci/skip-notifications-trait-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/skip-notifications-trait-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/skip-notifications-trait-plugin</url>
-    <tag>HEAD</tag>
-  </scm>
 
   <dependencyManagement>
     <dependencies>
@@ -224,5 +223,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
