@@ -56,7 +56,6 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
      * Our descriptor.
      */
     @Extension
-    @Discovery
     @Symbol("skipNotifications")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
 
