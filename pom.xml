@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>Skip Notifications Trait plugin</name>
