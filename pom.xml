@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>Skip Notifications Trait plugin</name>
@@ -56,7 +56,7 @@
     <connection>scm:git:git://github.com/jenkinsci/skip-notifications-trait-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/skip-notifications-trait-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/skip-notifications-trait-plugin</url>
-    <tag>skip-notifications-trait-1.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
