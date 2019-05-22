@@ -28,7 +28,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.25</version>
+    <version>3.36</version>
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
@@ -60,10 +60,10 @@
   </scm>
 
   <properties>
-    <jenkins.version>1.642.3</jenkins.version>
-    <java.level>7</java.level>
-    <branchsource.version>2.2.0</branchsource.version>
-    <scm-api.version>2.2.0</scm-api.version>
+    <jenkins.version>2.60.3</jenkins.version>
+    <java.level>8</java.level>
+    <branchsource.version>2.4.4</branchsource.version>
+    <scm-api.version>2.2.7</scm-api.version>
   </properties>
 
   <dependencyManagement>
@@ -71,12 +71,12 @@
       <dependency>
         <groupId>com.jcraft</groupId>
         <artifactId>jsch</artifactId>
-        <version>0.1.53</version>
+        <version>0.1.55</version>
       </dependency>
       <dependency>
-        <groupId>org.jenkins-ci</groupId>
-        <artifactId>annotation-indexer</artifactId>
-        <version>1.11</version>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>scm-api</artifactId>
+        <version>${scm-api.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -85,11 +85,6 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>cloudbees-bitbucket-branch-source</artifactId>
       <version>${branchsource.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>scm-api</artifactId>
-      <version>${scm-api.version}</version>
     </dependency>
   </dependencies>
 
