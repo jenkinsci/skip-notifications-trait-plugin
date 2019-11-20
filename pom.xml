@@ -37,7 +37,7 @@
 
   <name>Skip Notifications Trait plugin</name>
   <description>This is an extension for Bitbucket and GitHub Branch Source Plugin, which allows to skip notifying BitBucket or GitHub instances about build statuses.</description>
-  <url>https://wiki.jenkins.io/display/JENKINS/Skip+Notifications+Trait+Plugin</url>
+  <url>https://github.com/jenkinsci/skip-notifications-trait-plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
