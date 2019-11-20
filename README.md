@@ -1,6 +1,7 @@
 # Branch Source Plugin custom trait
 
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/skip-notifications-trait.svg)](https://plugins.jenkins.io/skip-notifications-trait)
+[![GitHub release](https://img.shields.io/github/tag/jenkinsci/skip-notifications-trait-plugin.svg?label=changelog)](https://github.com/jenkinsci/skip-notifications-trait-plugin/blob/master/CHANGELOG.md)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/skip-notifications-trait.svg?color=blue)](https://plugins.jenkins.io/skip-notifications-trait)
 
 This is an extension plugin which adds custom feature to the Bitbucket and GitHub Branch Source plugins, allowing to disable build status notifications.
