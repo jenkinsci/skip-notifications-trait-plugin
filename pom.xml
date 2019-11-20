@@ -36,7 +36,7 @@
   <packaging>hpi</packaging>
 
   <name>Skip Notifications Trait plugin</name>
-  <description>This is an extension for Bitbucket Branch Source Plugin, which allows to skip notifying BitBucket instance about build statuses.</description>
+  <description>This is an extension for Bitbucket and GitHub Branch Source Plugin, which allows to skip notifying BitBucket or GitHub instances about build statuses.</description>
   <url>https://wiki.jenkins.io/display/JENKINS/Skip+Notifications+Trait+Plugin</url>
   <licenses>
     <license>
@@ -63,7 +63,7 @@
     <jenkins.version>2.60.3</jenkins.version>
     <java.level>8</java.level>
     <branchsource.version>2.4.4</branchsource.version>
-    <scm-api.version>2.2.7</scm-api.version>
+    <scm-api.version>2.3.0</scm-api.version>
   </properties>
 
   <dependencyManagement>
@@ -73,18 +73,40 @@
         <artifactId>jsch</artifactId>
         <version>0.1.55</version>
       </dependency>
+      <!-- Require upper bound dependencies -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>git</artifactId>
+        <version>3.9.3</version>
+      </dependency>
       <dependency>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>scm-api</artifactId>
         <version>${scm-api.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>structs</artifactId>
+        <version>1.17</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>cloudbees-bitbucket-branch-source</artifactId>
       <version>${branchsource.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>github-branch-source</artifactId>
+      <version>2.5.0</version>
     </dependency>
   </dependencies>
 
