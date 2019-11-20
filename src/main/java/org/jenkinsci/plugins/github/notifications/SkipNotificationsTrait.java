@@ -1,7 +1,7 @@
 /*
 The MIT License
 
-Copyright (c) 2019, Elastic, Inc.
+Copyright (c) 2019, Elasticsearch B.V.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
