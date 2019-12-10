@@ -38,13 +38,13 @@ import org.kohsuke.stapler.DataBoundConstructor;
  *
  * @since 1.0.4
  */
-public class SkipNotificationsTrait extends SCMSourceTrait {
+public class NotificationsSkipTrait extends SCMSourceTrait {
 
     /**
      * Constructor for stapler.
      */
     @DataBoundConstructor
-    public SkipNotificationsTrait() {
+    public NotificationsSkipTrait() {
         //empty
     }
 
@@ -63,14 +63,14 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
      * Our {@link hudson.model.Descriptor}
      */
     @Extension
-    @Symbol("skipGitHubNotifications")
+    @Symbol("notificationsSkip")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
         /**
          * {@inheritDoc}
          */
         @Override
         public String getDisplayName() {
-            return org.jenkinsci.plugins.github.notifications.Messages.SkipNotificationsTrait_displayName();
+            return org.jenkinsci.plugins.github.notifications.Messages.NotificationsSkipTrait_displayName();
         }
 
         /**
