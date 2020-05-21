@@ -6,6 +6,8 @@
 
 This is an extension plugin which adds custom feature to the Bitbucket and GitHub Branch Source plugins, allowing to disable build status notifications.
 
+Similar to the [Disable GitHub Multibranch Status plugin](https://plugins.jenkins.io/disable-github-multibranch-status/).
+
 ## Usage
 
 ### BitBucket
