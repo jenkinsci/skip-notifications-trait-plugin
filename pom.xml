@@ -28,7 +28,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.36</version>
+    <version>4.42</version>
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
@@ -60,58 +60,31 @@
   </scm>
 
   <properties>
-    <jenkins.version>2.60.3</jenkins.version>
-    <java.level>8</java.level>
-    <branchsource.version>2.4.4</branchsource.version>
-    <scm-api.version>2.3.0</scm-api.version>
+    <jenkins.version>2.332.1</jenkins.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.jcraft</groupId>
-        <artifactId>jsch</artifactId>
-        <version>0.1.55</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>token-macro</artifactId>
-        <version>1.12.1</version>
-      </dependency>
-      <!-- Require upper bound dependencies -->
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>3.7</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>git</artifactId>
-        <version>3.9.3</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>scm-api</artifactId>
-        <version>${scm-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>structs</artifactId>
-        <version>1.17</version>
-      </dependency>
+        <dependency>
+            <groupId>io.jenkins.tools.bom</groupId>
+            <artifactId>bom-2.332.x</artifactId>
+            <version>1478.v81d3dc4f9a_43</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
     </dependencies>
-  </dependencyManagement>
+</dependencyManagement>
 
   <dependencies>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>cloudbees-bitbucket-branch-source</artifactId>
-      <version>${branchsource.version}</version>
+      <version>773.v4b_9b_005b_562b_</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>github-branch-source</artifactId>
-      <version>2.4.0</version>
+      <version>1656.v77eddb_b_e95df</version>
     </dependency>
   </dependencies>
 
