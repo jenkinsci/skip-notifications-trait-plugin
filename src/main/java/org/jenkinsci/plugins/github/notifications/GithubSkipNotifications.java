@@ -38,13 +38,13 @@ import org.jenkinsci.plugins.variant.OptionalExtension;
  *
  * @since 1.0.4
  */
-public class NotificationsSkipTrait extends SCMSourceTrait {
+public class GithubSkipNotifications extends SCMSourceTrait {
 
     /**
      * Constructor for stapler.
      */
     @DataBoundConstructor
-    public NotificationsSkipTrait() {
+    public GithubSkipNotifications() {
         //empty
     }
 
@@ -63,14 +63,14 @@ public class NotificationsSkipTrait extends SCMSourceTrait {
      * Our {@link hudson.model.Descriptor}
      */
     @OptionalExtension(requirePlugins={"github-branch-source"})
-    @Symbol("notificationsSkip")
+    @Symbol("githubSkipNotifications")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
         /**
          * {@inheritDoc}
          */
         @Override
         public String getDisplayName() {
-            return org.jenkinsci.plugins.github.notifications.Messages.NotificationsSkipTrait_displayName();
+            return Messages.GithubSkipNotifications_displayName();
         }
 
         /**
