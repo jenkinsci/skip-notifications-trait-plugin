@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>skip-notifications-trait</artifactId>
-  <version>1.0.6-SNAPSHOT</version>
+  <version>${changelist}</version>
   <packaging>hpi</packaging>
 
   <name>Skip Notifications Trait plugin</name>
@@ -50,16 +50,22 @@
       <id>alex_dubrouski</id>
       <name>Alex Dubrouski</name>
     </developer>
+    <developer>
+      <id>jonesbusy</id>
+      <name>Valentin Delaye</name>
+  </developer>
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/skip-notifications-trait-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/skip-notifications-trait-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/skip-notifications-trait-plugin</url>
-    <tag>HEAD</tag>
+    <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
+    <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+    <url>https://github.com/${gitHubRepo}</url>
+    <tag>${scmTag}</tag>
   </scm>
 
   <properties>
+    <changelist>999999-SNAPSHOT</changelist>
+    <gitHubRepo>jenkinsci/skip-notifications-trait-plugin</gitHubRepo>
     <jenkins.version>2.332.1</jenkins.version>
   </properties>
 
