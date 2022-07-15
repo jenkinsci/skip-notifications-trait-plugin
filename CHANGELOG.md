@@ -1,5 +1,7 @@
 # Changelog
 
+Releases notes are now available on github releases
+
 ## 1.0.0
 
 * Trait for bitbucket-branch-source-plugin
