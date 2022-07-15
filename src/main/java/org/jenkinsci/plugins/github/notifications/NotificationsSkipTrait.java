@@ -25,13 +25,13 @@ package org.jenkinsci.plugins.github.notifications;
 
 import org.jenkinsci.plugins.github_branch_source.GitHubSCMSource;
 import org.jenkinsci.plugins.github_branch_source.GitHubSCMSourceContext;
-import hudson.Extension;
 import jenkins.scm.api.SCMSource;
 import jenkins.scm.api.trait.SCMSourceContext;
 import jenkins.scm.api.trait.SCMSourceTrait;
 import jenkins.scm.api.trait.SCMSourceTraitDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
+import org.jenkinsci.plugins.variant.OptionalExtension;
 
 /**
  * Disables notifications.
@@ -62,7 +62,7 @@ public class NotificationsSkipTrait extends SCMSourceTrait {
     /**
      * Our {@link hudson.model.Descriptor}
      */
-    @Extension
+    @OptionalExtension(requirePlugins={"github-branch-source"})
     @Symbol("notificationsSkip")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
         /**

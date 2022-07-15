@@ -25,7 +25,6 @@ package com.cloudbees.jenkins.plugins.bitbucket.notifications;
 
 import com.cloudbees.jenkins.plugins.bitbucket.BitbucketSCMSource;
 import com.cloudbees.jenkins.plugins.bitbucket.BitbucketSCMSourceContext;
-import hudson.Extension;
 import jenkins.scm.api.SCMSource;
 import jenkins.scm.api.trait.SCMSourceContext;
 import jenkins.scm.api.trait.SCMSourceTrait;
@@ -33,6 +32,7 @@ import jenkins.scm.api.trait.SCMSourceTraitDescriptor;
 import jenkins.scm.impl.trait.Discovery;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
+import org.jenkinsci.plugins.variant.OptionalExtension;
 
 public class SkipNotificationsTrait extends SCMSourceTrait {
 
@@ -55,7 +55,7 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
     /**
      * Our descriptor.
      */
-    @Extension
+    @OptionalExtension(requirePlugins={"cloudbees-bitbucket-branch-source"})
     @Symbol("skipNotifications")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
 
