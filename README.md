@@ -18,7 +18,22 @@ Similar to the [Disable GitHub Multibranch Status plugin](https://plugins.jenkin
       repoOwner: 'example-owner',
       repository: 'example-repository',
       traits: [
-        skipNotifications(),
+        bitbucketSkipNotifications(),
+        ...,
+      ]
+    )
+  )
+```
+
+### Github
+
+```Groovy
+  checkout resolveScm(
+    source: github(
+      repoOwner: 'example-owner',
+      repository: 'example-repository',
+      traits: [
+        githubSkipNotifications(),
         ...,
       ]
     )

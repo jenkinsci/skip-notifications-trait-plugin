@@ -34,13 +34,13 @@ import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.jenkinsci.plugins.variant.OptionalExtension;
 
-public class SkipNotificationsTrait extends SCMSourceTrait {
+public class BitbucketSkipNotifications extends SCMSourceTrait {
 
     /**
      * Constructor for stapler.
      */
     @DataBoundConstructor
-    public SkipNotificationsTrait() {
+    public BitbucketSkipNotifications() {
         //empty
     }
 
@@ -56,12 +56,12 @@ public class SkipNotificationsTrait extends SCMSourceTrait {
      * Our descriptor.
      */
     @OptionalExtension(requirePlugins={"cloudbees-bitbucket-branch-source"})
-    @Symbol("skipNotifications")
+    @Symbol("bitbucketSkipNotifications")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
 
         @Override
         public String getDisplayName() {
-            return Messages.SkipNotificationsTrait_displayName();
+            return Messages.BitbucketSkipNotifications_displayName();
         }
 
         @Override
