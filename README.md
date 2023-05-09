@@ -42,6 +42,14 @@ Similar to the [Disable GitHub Multibranch Status plugin](https://plugins.jenkin
   )
 ```
 
+### Via Jenkins UI
+
+Edit the configuration of your job under `Branch Sources ` → `Behaviors` → Search for `Skip build status notifications`:
+
+<img width="240" alt="image" src="https://github.com/jenkinsci/skip-notifications-trait-plugin/assets/8419048/6f10c174-d5eb-45b4-add8-0e087e50d4cf">
+
+Don't forget to save the changes.
+
 ## License
 
  [MIT License](./LICENSE.md)
