@@ -23,15 +23,15 @@ THE SOFTWARE.
 */
 package org.jenkinsci.plugins.github.notifications;
 
-import org.jenkinsci.plugins.github_branch_source.GitHubSCMSource;
-import org.jenkinsci.plugins.github_branch_source.GitHubSCMSourceContext;
 import jenkins.scm.api.SCMSource;
 import jenkins.scm.api.trait.SCMSourceContext;
 import jenkins.scm.api.trait.SCMSourceTrait;
 import jenkins.scm.api.trait.SCMSourceTraitDescriptor;
 import org.jenkinsci.Symbol;
-import org.kohsuke.stapler.DataBoundConstructor;
+import org.jenkinsci.plugins.github_branch_source.GitHubSCMSource;
+import org.jenkinsci.plugins.github_branch_source.GitHubSCMSourceContext;
 import org.jenkinsci.plugins.variant.OptionalExtension;
+import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
  * Disables notifications.
@@ -45,7 +45,7 @@ public class GithubSkipNotifications extends SCMSourceTrait {
      */
     @DataBoundConstructor
     public GithubSkipNotifications() {
-        //empty
+        // empty
     }
 
     /**
@@ -62,7 +62,7 @@ public class GithubSkipNotifications extends SCMSourceTrait {
     /**
      * Our {@link hudson.model.Descriptor}
      */
-    @OptionalExtension(requirePlugins={"github-branch-source"})
+    @OptionalExtension(requirePlugins = {"github-branch-source"})
     @Symbol("githubSkipNotifications")
     public static class DescriptorImpl extends SCMSourceTraitDescriptor {
         /**
@@ -88,6 +88,5 @@ public class GithubSkipNotifications extends SCMSourceTrait {
         public Class<? extends SCMSource> getSourceClass() {
             return GitHubSCMSource.class;
         }
-
     }
 }
