@@ -44,7 +44,7 @@
   <properties>
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/skip-notifications-trait-plugin</gitHubRepo>
-    <jenkins.version>2.426.3</jenkins.version>
+    <jenkins.version>2.440.2</jenkins.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
 
@@ -52,7 +52,7 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.426.x</artifactId>
+        <artifactId>bom-2.440.x</artifactId>
         <version>2907.vcb_35d6f2f7de</version>
         <type>pom</type>
         <scope>import</scope>
