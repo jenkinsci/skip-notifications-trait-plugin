@@ -44,7 +44,7 @@
   <properties>
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/skip-notifications-trait-plugin</gitHubRepo>
-    <jenkins.version>2.452.3</jenkins.version>
+    <jenkins.version>2.462.2</jenkins.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
 
