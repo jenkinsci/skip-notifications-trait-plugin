@@ -53,8 +53,7 @@ public class GithubSkipNotifications extends SCMSourceTrait {
      */
     @Override
     protected void decorateContext(SCMSourceContext<?, ?> context) {
-        if (context instanceof GitHubSCMSourceContext) {
-            GitHubSCMSourceContext ctx = (GitHubSCMSourceContext) context;
+        if (context instanceof GitHubSCMSourceContext ctx) {
             ctx.withNotificationsDisabled(true);
         }
     }

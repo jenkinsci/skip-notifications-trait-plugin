@@ -45,8 +45,7 @@ public class BitbucketSkipNotifications extends SCMSourceTrait {
 
     @Override
     protected void decorateContext(SCMSourceContext<?, ?> context) {
-        if (context instanceof BitbucketSCMSourceContext) {
-            BitbucketSCMSourceContext ctx = (BitbucketSCMSourceContext) context;
+        if (context instanceof BitbucketSCMSourceContext ctx) {
             ctx.withNotificationsDisabled(true);
         }
     }
